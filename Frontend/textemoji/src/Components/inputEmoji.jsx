@@ -9,7 +9,7 @@ const InputEmoji = () => {
   const emojiMap = {
     "::smiley::": "😀",
     "::sad::": "😫",
-    "::smiley::": "😊",
+    "::happy::": "😊",
   };
 
   const handleChange = (e) => {
