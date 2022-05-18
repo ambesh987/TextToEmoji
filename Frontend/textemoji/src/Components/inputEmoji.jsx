@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./inputEmoji.css";
 
 const InputEmoji = () => {
+    
   const [input, setInput] = useState("");
   const [allData, setAllData] = useState([]);
+  //emoji map that contains all the emojis
   const emojiMap = {
     "::smiley::": "😀",
     "::sad::": "😫",
@@ -12,7 +14,7 @@ const InputEmoji = () => {
 
   const handleChange = (e) => {
     let { value } = e.target;
-
+    //regex expression to map the emoji
     var regex  = new RegExp(Object.keys(emojiMap).join("|"), "gi");
     value = value.replace(regex, function (matched) {
       return emojiMap[matched];
@@ -20,7 +22,7 @@ const InputEmoji = () => {
 
     setInput(value);
   };
-
+  
   const post = () => {
     const payload = {
       string: input,
