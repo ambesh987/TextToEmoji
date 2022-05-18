@@ -53,7 +53,7 @@ const InputEmoji = () => {
 
   return (
     <>
-      <h3>Convert text to Emoji😊</h3>
+      <h2>Convert text to Emojis😊</h2>
       <div id="input-container">
         <input
           type="text"
