@@ -25,7 +25,7 @@ const InputEmoji = () => {
     const payload = {
       string: input,
     };
-    fetch("http://localhost:3000/input/upload", {
+    fetch("http://localhost:3000/input/post", {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
